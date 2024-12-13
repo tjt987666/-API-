@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yupi.springbootinit.mapper.UserInterfaceInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.yupi.springbootinit.model.entity.UserInterfaceInfo">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="userid" column="userId" jdbcType="BIGINT"/>
+            <result property="interfaceinfoid" column="interfaceInfoId" jdbcType="BIGINT"/>
+            <result property="totalnum" column="totalNum" jdbcType="INTEGER"/>
+            <result property="invokenum" column="invokeNum" jdbcType="INTEGER"/>
+            <result property="createtime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updatetime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isdelete" column="isDelete" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,userId,interfaceInfoId,
+        totalNum,invokeNum,createTime,
+        updateTime,isDelete
+    </sql>
+
+    <select id="selectSumInfo" resultType="com.yupi.springbootinit.model.entity.UserInterfaceInfo">
+        -- 获取接口调用次数的统计信息，并按照调用总次数降序排列，最后取前三个接口作为结果
+        select interfaceInfoId, sum(totalNum) as totalNum
+        from user_interface_info
+        group by interfaceInfoId
+        order by totalNum desc
+            limit #{limit};
+    </select>
+
+</mapper>

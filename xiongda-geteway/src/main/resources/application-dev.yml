@@ -1,0 +1,38 @@
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: after_route
+#          uri: http://localhost:8089/get.gateway
+#          predicates:
+#            - Cookie=mycookie,mycookievalue
+
+
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: after_route # 路由id
+          uri: http://localhost:8123 # 转发地址
+          predicates:
+            - Path=/api/**  # 请求地址中包含前面有api的全部转发到8123端口，比如http://localhost:8001/api/name/get?name=1 到 http://localhost:8123/api/name/get?name=1
+
+
+#      routes:
+#        - id: after_route
+#          uri: http://localhost:8089/get.gateway
+#          predicates:
+##            - After=2024-11-06T21:50:00.000+08:00[Asia/Shanghai]
+#            - Between=2024-11-06T21:50:00.000+08:00[Asia/Shanghai], 2024-11-06T22:10:00.000+08:00[Asia/Shanghai]
+#            - Path=/a
+#        - id: route_a
+#          uri: http://localhost:8089/get.gateway
+##          断言
+#          predicates:
+#            - Path=/a,/b
+
+
+server:
+  port: 8001
+  shutdown: graceful

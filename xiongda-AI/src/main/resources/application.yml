@@ -1,0 +1,40 @@
+server:
+  port: 8480
+  shutdown: graceful #优雅停机,关闭服务先处理请求
+
+spring:
+  ai:
+    dashscope:
+      api-key: sk-151f3412366c43e9919d4e5d98e8db43
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/zmall2?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+#    username: root
+#    password: 123456
+
+
+##
+#mybatis-plus:
+#  mapper-locations: classpath:mapper/*.xml
+#  type-aliases-package: com.zking.xiongda.domain
+
+#pagehelper:
+#  helper-dialect: mysql #可以省略
+
+
+#dubbo:
+#  application:
+#    name: spring-alibaba
+#  protocol:
+#    name: dubbo
+#    port: -1
+#  registry:
+#    id: nacos-registry
+#    address: nacos://localhost:8848
+#    心跳检测
+#    parameters:
+#      preserved:
+#        heart:
+#          beat:
+#            timeout: 5000
+

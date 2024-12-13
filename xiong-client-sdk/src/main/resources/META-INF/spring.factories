@@ -1,0 +1,2 @@
+# springboot-start
+org.springframework.boot.autoconfigure.EnableAutoConfiguration =com.xiongda.xiongclientsdk.XiongdaClientConfig
