@@ -12,8 +12,8 @@
 在基础版的API架构中我们可以看到，如果我们自己研发产品上线的话，要依赖别人的产品维持，那么这是不长久的，如果自己开发，在成本上又太高了，有没有什么办法，可以解决这种项目不是简单，易维护、成本降低、用户体更好的方法，当然有！！，他就是AI，或许到这里小伙伴们可能会有疑问，我这个用AI干嘛，AI不是帮我看报错这些其他的问题吗，nonono，你局限了，Spring官方早就推出了Spring AI alibab，可以很好的在项目中接入AI程序，那么现在回到我们的问题，我开发者开发一个获取天气的接口，我个人要调用别人的接口或者自己爬天气网的信息，那么我们换个思位想，我能不能让AI来做这些事情呢？并且AI还可以做的更好，AI的原理其实根据你的信息通过他们的逻辑去爬取对应的数据，然后在用他们的算法整理出来，是不是就简单多了，当然，这是个思想，大家也不要去抗拒这个AI，我觉得我们程序员就是应该不断的提升自己接受新的技术，这样才不会被淘汰，并且AI的到来在未来的开发中说不定会接入我们的传统行业中，我们不一定要特别特别精，我们要了解，有这个思想。
 
 ### AI版API架构
+![架构](https://github.com/user-attachments/assets/db43a514-d519-4330-895b-5209d81f43cb)
 
-![image-20241213111127983](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241213111127983.png)
 
 #### AI效果图
 
@@ -42,23 +42,27 @@ https://www.yuque.com/tanjiantao/bn92e3/yzz1ch33b1407cbi?singleDoc# 《智汇API
 
 - 用户登录模块
 
-  ![用户登录模块](E:\智汇API接口平台\用户登录模块.png)
+![用户登录模块](https://github.com/user-attachments/assets/4597b1a2-cfc5-4d34-a626-6422c69a83fb)
+
 
 - 接口主页展示模块
+![接口主页展示模块](https://github.com/user-attachments/assets/7a25a1df-7226-4366-ab3b-11d40316642f)
 
-  ![接口主页展示模块](E:\智汇API接口平台\接口主页展示模块.png)
 
 - 接口调用详情模块
 
-  ![接口调用详情模块](E:\智汇API接口平台\接口调用详情模块.png)
+![接口调用详情模块](https://github.com/user-attachments/assets/fa8c6a02-30e7-4ac7-b504-a7e0ea4200f7)
+
 
 - 接口管理模块
 
-  ![接口管理模块](E:\智汇API接口平台\接口管理模块.png)
+![接口管理模块](https://github.com/user-attachments/assets/aaa52362-bdf6-42cf-bf84-2bdfac3af455)
+
 
 - 接口调用情况分析模块
 
-  ![接口调用情况分析模块](E:\智汇API接口平台\接口调用情况分析模块.png)
+![接口调用情况分析模块](https://github.com/user-attachments/assets/0c0255e2-5e9a-4a52-9365-7eeb3befba56)
+
 
 ## 技术选形
 
